@@ -15,9 +15,9 @@
                 <div class="pr-5"><strong>12k</strong> followers</div>
                 <div class="pr-5"><strong>204</strong> following</div>
             </div>
-            <div class="pt-3" style="font-weight: bold;">Olakunle</div>
-            <div>I am a passionate software engineer who enjoys solving problems using technology.</div>
-            <div><a href="#" style="color:black;">kunlexy_codes.org</a></div>
+            <div class="pt-3" style="font-weight: bold;">{{ $user->profile->title ?? '' }}</div>
+            <div>{{ $user->profile->description ?? '' }}</div>
+            <div><a href="#" style="color:black;">{{ $user->profile->url ?? '' }}</a></div>
         </div>
     </div>
     <div class="row pt-4">
