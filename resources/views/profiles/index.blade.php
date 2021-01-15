@@ -24,10 +24,12 @@
     <div class="row pt-4">
         @foreach ($user->posts as $post)
         <div class="col-4">
-            <img src="/storage/{{$post->image}}" class="w-100 pb-4" />
+            <a href="/post/{{ $post->id }}">
+                <img src="/storage/{{$post->image}}" class="w-100 pb-4" />
+            </a>
         </div>
         @endforeach
-       
+
     </div>
 </div>
 @endsection
