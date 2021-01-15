@@ -11,11 +11,14 @@
                 <h1>{{$user->username}}</h1>
                 <a href="/post/create">Add New Post</a>
             </div>
+            <a href="/profile/{{ $user->profile->id }}/edit">Edit Profile</a>
+
             <div class="d-flex pt-3">
                 <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
                 <div class="pr-5"><strong>12k</strong> followers</div>
                 <div class="pr-5"><strong>204</strong> following</div>
             </div>
+
             <div class="pt-3" style="font-weight: bold;">{{ $user->profile->title ?? '' }}</div>
             <div>{{ $user->profile->description ?? '' }}</div>
             <div><a href="#" style="color:black;">{{ $user->profile->url ?? '' }}</a></div>
