@@ -33,6 +33,9 @@ Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edi
 
 Route::put('/profile/{user}', 'ProfilesController@update')->name('profile.update');
 
+Route::post('/follow/{user}', 'FollowsController@store');
+
+
 
 
 
