@@ -15,12 +15,19 @@ class ProfilesController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     
-    public function index($user)
+    //One method of passing properties to the view
+    // public function index($user)
+    // {
+    //     $user = User::findOrFail($user);
+    //     return view('profiles.index', [
+    //         'user' => $user
+    //     ]);
+    // }
+
+    public function index(User $user)
     {
-        $user = User::findOrFail($user);
-        return view('profiles.index', [
-            'user' => $user
-        ]);
+        $follows = (auth()->user()) ? auth()->user()->following->contains($user->id) : false;
+        return view('profiles.index', compact('user', 'follows'));
     }
 
     public function edit( User $user )
