@@ -22,18 +22,11 @@ superGram is a social platform which enables friends and families to connect and
 8. User (client) recieve a welcome mail when they signup.
 
 
-## Project Pipeline
-
-- [Pivotal Tracker stories](https://www.pivotaltracker.com/n/projects/2327655)
-- [UI Templates](https://muheebolakunle.github.io/Quick_credit/UI)
-- [Hosted API](https://quickcredit-kuns.herokuapp.com/api/v1)
-
-
 ## Technologies
 
 - Laravel
 - Blade
-- Vue
+- VueJS
 
 ## Requirements and Installation
 
